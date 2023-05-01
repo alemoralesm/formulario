@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <form action="#" method="get" id="formulario">
+        <h2>Formulario </h2>
+        
+            <label for="rut">Rut</label>
+            <input type="number" id="rut" min="99999999" placeholder="Ingrese su rut" max="999999999"  required/>   
+        
+        <br>
+        
+            <label for="numero">Celular</label>
+            <input type="number" id="numero" min="999999999" placeholder="Ingrese su numero" max="999999999999" required/>
+
+        
+        <br>
+        
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre"min="3" max="20" required/> 
+        
+        <br>
+       
+            <label for="apellidop">Apellido Paterno</label>
+            <input type="text" id="apellidop" name="apellidop" placeholder="Ingrese su apellido" min="3" max="20" required/> 
+        
+        <br> 
+        
+            <label for="apellidom">Apellido Materno</label>
+            <input type="text" id="apellidom" name="apellidom" placeholder="Ingrese su apellido" min="3" max="20" required/> 
+       
+        <br>
+        
+            <label for="Profesion">Profesion</label>
+            <input type="text" id="profesion" name="Profesion" placeholder="Ingrese su profesion" required/> 
+        
+        <br>
+        
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" placeholder="Ingrese su edad" min="18" max="35" required>
+        
+        <br>
+        
+            <label for="correo">Email</label>
+            <input type="email" id="email" name="correo" placeholder="Ingrese email" required>
+        
+        <br>
+        
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+        
+        <br>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="red">Femenino</label>
+        <input type="radio" id="femenino" name="genero" value="Femenino" required>
+        <br>
+        <input type="file" name="selec">
+        <br>
+        
+            <label for="comentario">Porque desea este trabajo?</label>
+            <br> 
+            <textarea name="comentario" id="comentario" placeholder="Ingrese comentario"rows="10" cols="60" required></textarea>
+            <br>
+       
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablecer</button>
+        
+        <h3 id="respuesta" class="text-center fw-light"></h3>
+    </form>
+    <script src="js/form.js"></script>
+</body>
+</html>

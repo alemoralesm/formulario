@@ -1,0 +1,43 @@
+body{
+    background-color: bisque;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin: 0 auto;
+}
+::placeholder{
+    text-align: center;
+}
+
+form {
+  background-color: rgb(163, 163, 163);
+  border: 3px solid black;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  width: 90%;
+  height: 30px;
+  margin: 0.5rem;
+}
+
+form button {
+  padding: 0.5em 1em;
+  border: none;
+
+  cursor: pointer;
+}
+
+
+
